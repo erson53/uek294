@@ -8,7 +8,7 @@ import { useState } from "react";
 function AddTask() {
   return (
     <div className="AddTaskContainer">
-        <Typography variant="h5">Create Task</Typography>
+        <Typography variant="h5">Create Task:</Typography>
       <div className="InputNameContainer">
         <TextField id="standard-basic" label="Task Name:" variant="standard" />
       </div>

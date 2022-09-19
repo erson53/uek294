@@ -1,8 +1,13 @@
-.ShowTaskContainer{
-    text-align: center;
+.showTaskTitle {
+  text-align: center;
 }
 
-.test{
-    display: flex;
-justify-content: center;
+.tableContainer {
+  width: 18rem;
+}
+
+.centerTable {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
 }
