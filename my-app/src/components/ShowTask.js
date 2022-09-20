@@ -10,22 +10,7 @@ import TableBody from "@mui/material/TableBody";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 
-function ShowTask() {
-  const [tasks, setTasks] = useState([]);
-
-  useEffect(() => {
-    fetch("http://localhost:3000/tasks", {
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        setTasks(data);
-      });
-  }, []);
+function ShowTask({tasks}) {
 
   return (
     <div className="centerTable">
