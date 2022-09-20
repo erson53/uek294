@@ -28,9 +28,17 @@ function AddTask({ saveTask }) {
         saveTask(data);
       })
       .then(() => setShowMessage(true));
+
+      if (title.trim().length !== 0) {
+        console.log('test');
+      } else {
+        alert('Your input field is empty!');
+      }
   };
 
   const [showMeassage, setShowMessage] = useState(false);
+
+  
 
   return (
     <div className="AddTaskContainer">

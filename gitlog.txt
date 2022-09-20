@@ -1,0 +1,41 @@
+commit e2dda65c398c28acbd2dbfa96fb5495393267c98
+Author: erson <erson.bytyqi06@gmail.com>
+Date:   Tue Sep 20 15:38:41 2022 +0200
+
+    test
+
+commit 592a4de8966af5789cb7d49c0fac4016d6fda098
+Author: erson <erson.bytyqi06@gmail.com>
+Date:   Tue Sep 20 15:38:06 2022 +0200
+
+    finished project
+
+commit 8f8f89ca3c35109ccfaa32e0057b9b5946f7bfc8
+Author: erson <erson.bytyqi06@gmail.com>
+Date:   Tue Sep 20 14:04:28 2022 +0200
+
+    finished crud
+
+commit 67c297f9103cd8b001b6ed97abfa8291810e4bf2
+Author: erson <erson.bytyqi06@gmail.com>
+Date:   Tue Sep 20 08:21:47 2022 +0200
+
+    create task
+
+commit be082a28cc56c93b0953f644cfbf85453181515a
+Author: erson <erson.bytyqi06@gmail.com>
+Date:   Mon Sep 19 14:39:22 2022 +0200
+
+    show task
+
+commit d990badf30ae30d99a69e331e05943568f641bed
+Author: erson <erson.bytyqi06@gmail.com>
+Date:   Mon Sep 19 09:51:38 2022 +0200
+
+    created project
+
+commit c1ffb0e17602d5ab65a352d59f98e37c12c2feb2
+Author: erson <erson.bytyqi06@gmail.com>
+Date:   Wed Sep 14 13:11:57 2022 +0200
+
+    initialize project
