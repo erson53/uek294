@@ -29,12 +29,7 @@ function AddTask({ saveTask }) {
       });
   };
   return (
-    /*<form onSubmit={handleSubmit}>
-      <label for='titleInput'>Title</label>
-      <input type='text' name='title' id='titleInput'
-      onChange={handleChange}/>
-      <button type='submit'>Save</button>
-    </form>*/
+
     <div className="AddTaskContainer">
       <form onSubmit={handleSubmit}>
         <Typography variant="h5">Create Task:</Typography>

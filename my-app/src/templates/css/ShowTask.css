@@ -3,11 +3,19 @@
 }
 
 .tableContainer {
-  width: 18rem;
+  width: 20rem;
 }
 
 .centerTable {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
+}
+
+.editButtonContainer{
+  text-align: center;
+}
+
+.editTextField{
+  width: 8rem;
 }
