@@ -3,7 +3,7 @@
 }
 
 .tableContainer {
-  width: 20rem;
+  width: 60vh;
 }
 
 .centerTable {
@@ -17,5 +17,5 @@
 }
 
 .editTextField{
-  width: 8rem;
+  width: 10rem;
 }

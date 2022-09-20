@@ -68,3 +68,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+### Github-repository zu diesem Projekt:
+`https://github.com/erson53/uek294`
+
+### Dieses Projekt ist eine Single-Rage-Application
+
+### Todo hinzufügen
+`Bei dem obersten Input-feld namens 'Task Name', kann man den Namen des Todo's, welches man erstellen will eingeben. Mit dem Submit Button wird es dan Zu der Tabelle unten hinzugefügt.`
+
+### Todos ansehen, bearbeiten, Löschen und abschliessen
+`Die Tasks die man erstellt hat werden alle unten in einer Tabelle aufgelistet. Dort sieht man den Namen, die ID und ob es schon erledigt wurde. Mit dem Delet-Button können einzelne Todo's gelöscht werden. Mit dem Edit-Button, oberhalb der Tabelle, kann man die Namen der Todo's bearbeiten. Wird der Button angeklickt, erscheint ein Input-Feld, in welchen man den neuen Namen eingeben kann. Mit dem Update-Button wird dann der Name aktualisiert. Wenn mann auf den Done-Button klick, verändert sich das Zeichen und man sieht, das dieses Todo abgeschlossen wurde`
+
+

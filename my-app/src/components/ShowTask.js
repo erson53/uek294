@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { ListItem, TableCell, Typography } from "@mui/material";
+import React, { useState } from "react";
+import { TableCell, Typography } from "@mui/material";
 import "../templates/css/ShowTask.css";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
@@ -33,6 +33,21 @@ function ShowTask({ tasks }) {
     }).then(alert("succesfuly"));
   };
 
+  const changeStatus = (id, title) => {
+    window.location.reload();
+    fetch("http://localhost:3000/tasks", {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        id: id,
+        title: title,
+        completed: true,
+      }),
+    }).then(alert("succesfuly"));
+  };
+
   const [show, setShow] = useState(false);
 
   function deleteTask(id) {
@@ -57,13 +72,13 @@ function ShowTask({ tasks }) {
         <div className="editButtonContainer">
           <Button onClick={() => setShow(true)}>Edit</Button>
         </div>
-
         <Table>
           <TableHead>
             <TableRow>
               <TableCell>ID</TableCell>
               <TableCell>Title</TableCell>
               <TableCell>Completed</TableCell>
+              <TableCell>Delete</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -72,7 +87,10 @@ function ShowTask({ tasks }) {
                 <TableRow>
                   <TableCell>{task.id}</TableCell>
                   <TableCell>{task.title}</TableCell>
-                  <TableCell>{task.completed ? "✅" : "❌"}</TableCell>
+                  <TableCell>
+                    {task.completed ? "✅" : "❌"}
+                    <Button onClick={() => changeStatus(task.id, task.title)}>Done</Button>
+                  </TableCell>
                   <TableCell>
                     <Button onClick={deleteTask(task.id)}>Delete</Button>
                   </TableCell>
@@ -91,9 +109,10 @@ function ShowTask({ tasks }) {
                             ></TextField>
                           </div>
                           <div>
-                            <Button onClick={() => changeData(task.id)}>
+                            <Button size="small" onClick={() => changeData(task.id)}>
                               Update
                             </Button>
+                            <Button color="error" size="small" onClick={() => setShow(false)}>Cancel</Button>
                           </div>
                         </>
                       ) : null}

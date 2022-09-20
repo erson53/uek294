@@ -26,10 +26,13 @@ function AddTask({ saveTask }) {
       })
       .then((data) => {
         saveTask(data);
-      });
+      })
+      .then(() => setShowMessage(true));
   };
-  return (
 
+  const [showMeassage, setShowMessage] = useState(false);
+
+  return (
     <div className="AddTaskContainer">
       <form onSubmit={handleSubmit}>
         <Typography variant="h5">Create Task:</Typography>
@@ -39,12 +42,20 @@ function AddTask({ saveTask }) {
           type="text"
           name="title"
           id="titleInput"
+          onFocus={() => setShowMessage(false)}
           onChange={handleChange}
         />
         <div className="SubmitButtonContainer">
           <Button type="submit">Submit</Button>
         </div>
       </form>
+      <div>
+        {showMeassage ? (
+          <>
+            <Typography color="primary" size='small'>Your Task was created!</Typography>
+          </>
+        ) : null}
+      </div>
     </div>
   );
 }
